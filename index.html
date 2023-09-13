@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Lista de Tarefas</title>
+    </head>
+<body>
+    <h1> Lista de Tarefas </h1>
+    <h2> Adicionar Nova Tarefa </h2>
+    <form action="/tarefas/">
+        <label for="nomeTarefa">Nome: </label>
+        <input type="text" id="nomeTarefa" required>
+        <br>
+        <label for="descricaoTarefa">Descrição: </label>
+        <input type="text" id="descricaoTarefa" required>
+        <br>
+        <label for="statusTarefa">Status: </label>
+        <select id="statusTarefa" required>
+            <option value="A FAZER"> A FAZER </option>
+            <option value="FAZENDO"> FAZENDO </option>
+            <option value="FEITO"> FEITO </option>
+        </select>
+        <br>
+        <button type="submit">Adicionar Tarefa</button>
+    </form>
+
+    <h2> Tarefas Existentes</h2>
+    <ul id="listaTarefas"></ul>
+
+    
+    
+</body>    
+</html>
